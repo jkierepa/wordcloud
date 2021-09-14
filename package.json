@@ -26,7 +26,8 @@
     "test": "craco test",
     "eject": "react-scripts eject",
     "lint": "eslint src --ext .ts --ext .tsx",
-    "lint:fix": "yarn run lint -- --fix"
+    "lint:fix": "yarn run lint -- --fix",
+    "sf": "yarn run lint:fix && yarn run start"
   },
   "eslintConfig": {
     "extends": [
