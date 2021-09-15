@@ -23,21 +23,22 @@ module.exports = {
     'jest',
   ],
   rules: {
-    "no-use-before-define": "off",
-    "@typescript-eslint/no-use-before-define": ["error"],
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': ['error'],
     'import/no-unresolved': 'off',
     'react/require-default-props': 'off',
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': ['error'],
     'import/extensions': 'off',
+    'max-len': ['error', { code: 150 }],
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
   },
-  "overrides": [
+  overrides: [
     {
-      "files": ["*.tsx"],
-      "rules": {
-        "@typescript-eslint/explicit-module-boundary-types": "off"
-      }
-    }
-  ]
+      files: ['*.tsx'],
+      rules: {
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
+      },
+    },
+  ],
 };

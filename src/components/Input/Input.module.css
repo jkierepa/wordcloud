@@ -1,0 +1,17 @@
+.input {
+    max-width: 30rem;
+    width: 100%;
+    min-width: 10rem;
+
+    background-color: var(--secondary-color);
+    color: var(--foreground-color);
+
+    border-radius: 25px;
+    border-color: var(--foreground-color);
+
+    padding: 10px;
+
+    font-size: 1.5em;
+
+    outline: none;
+}
