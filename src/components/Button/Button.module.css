@@ -1,15 +1,11 @@
-.input {
-    width: 100%;
+.button {
+    flex: 1;
 
     background-color: var(--secondary-color);
     color: var(--foreground-color);
 
     border-radius: var(--global-border-radius);
-    border-color: var(--foreground-color);
+    border: 3px solid var(--foreground-color);
 
-    padding: 10px;
-
-    font-size: 1.5em;
-
-    outline: none;
+    box-shadow: 0 0 20px var(--foreground-color);
 }

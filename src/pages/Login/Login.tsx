@@ -1,16 +1,10 @@
 import React from 'react';
-import Input from '@components/Input/Input';
-import Header from '@components/Header/Header';
+import LoginContainer from '@containers/Login/LoginContainer';
 
-const Login = () => {
-  const text = 'Login';
-  return (
-    <div>
-      <Header>Wordcloud</Header>
-      <Input value="elo" setValue={() => console.log('elo')} />
-      {text}
-    </div>
-  );
-};
+const Login = () => (
+  <div>
+    <LoginContainer />
+  </div>
+);
 
 export default Login;
