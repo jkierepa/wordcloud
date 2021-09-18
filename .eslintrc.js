@@ -7,7 +7,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
-    'airbnb',
+    'react-app',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -38,6 +38,7 @@ module.exports = {
       files: ['*.tsx'],
       rules: {
         '@typescript-eslint/explicit-module-boundary-types': 'off',
+        'no-param-reassign': ['error', { props: false }],
       },
     },
   ],

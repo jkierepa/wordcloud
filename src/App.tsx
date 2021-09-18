@@ -10,8 +10,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { store, persistor } from '@store/store';
 
 import Login from './pages/Login/Login';
-
-import './App.css';
+import Game from '@pages/Game/Game';
 
 function App() {
   return (
@@ -21,6 +20,9 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Login />
+            </Route>
+            <Route exact path="/game">
+              <Game />
             </Route>
           </Switch>
         </Router>

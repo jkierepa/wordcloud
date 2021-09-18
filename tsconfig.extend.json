@@ -11,7 +11,10 @@
       "@utils/*": ["utils/*"],
       "@theme/*": ["theme/*"],
       "@appTypes/*": ["appTypes/*"],
-      "@assets/*": ["../assets/*"]
+      "@assets/*": ["../assets/*"],
+      "@api/*": ["api/*"],
+      "@layouts/*":["layouts/*"],
+      "@context/*":["context/*"]
     }
   }
 }

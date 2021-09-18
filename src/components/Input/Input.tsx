@@ -13,7 +13,7 @@ type InputProps = {
 
 const Input = ({
   placeholder, customStyle, value, setValue,
-}: InputProps) => (
+}: InputProps): React.ReactElement => (
   <input
     type="text"
     value={value}

@@ -7,5 +7,5 @@
     border-radius: var(--global-border-radius);
     border: 3px solid var(--foreground-color);
 
-    box-shadow: 0 0 20px var(--foreground-color);
+    /* box-shadow: 0 0 20px var(--foreground-color), inset 0 0 10px var(--foreground-color); */
 }
