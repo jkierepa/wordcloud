@@ -1,15 +1,13 @@
-import { CustomStyle } from '@appTypes/appTypes';
 import React from 'react';
 import cln from 'classnames';
+
+import { ButtonProps } from '@appTypes/propTypes';
+
 import styles from './Button.module.css';
 
-type ButtonProps = {
-    children?: React.ReactNode
-    customStyle?: CustomStyle
-    onClick(): void
-}
 
-const Button = ({ children, onClick, customStyle }: ButtonProps) => (
+
+const Button = ({ children, onClick, customStyle }: ButtonProps): React.ReactElement => (
   <button
     type="button"
     onClick={() => onClick()}

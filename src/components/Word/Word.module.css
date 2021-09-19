@@ -1,3 +1,25 @@
+.wordWrapper {
+    flex: 1; 
+
+    background-color: transparent;
+
+    border: none
+}
+
+.word {
+    color: var(--foreground-color);
+}
+
 .selected {
-    border: 4px solid red
+    text-shadow: 0 0 1em var(--foreground-color);
+}
+
+.checked {
+    color: var(--error-color);
+    text-shadow: 0 0 1em var(--error-color);
+}
+
+.correct {
+    color: var(--primary-color);
+    text-shadow: 0 0 1em var(--primary-color);
 }

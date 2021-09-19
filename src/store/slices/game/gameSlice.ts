@@ -1,9 +1,11 @@
+import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
+
 import fetchRandomWordSet from '@api/fetchRandomWordSet';
 import fetchSets from '@api/fetchSets';
 import fetchWordSet from '@api/fetchWordSet';
-import { WordSet } from '@appTypes/appTypes';
-import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
+
 import { RootState } from '@store/store';
+import { WordSet } from '@appTypes/appTypes';
 
 export const fetchGameSets = createAsyncThunk('game/fetchGameSets', async () => fetchSets())
 export const fetchSpecifiedWordSet = createAsyncThunk('game/fetchWordSet', async (set: string) => fetchWordSet(set))
@@ -16,14 +18,12 @@ export type GameState = {
   availableGameSets: string[];
   wordSet: WordSet | undefined;
   correctWords: string[];
-  selectedWords: string[]
 }
 
 export const initialState: GameState = {
   availableGameSets: [],
   wordSet: undefined,
   correctWords: [],
-  selectedWords: []
 };
 
 export const gameSlice = createSlice({
@@ -35,11 +35,6 @@ export const gameSlice = createSlice({
         state.availableGameSets = state.availableGameSets.filter((set) => set !== action.payload)
       }
     },
-    updateSelectedWords: (state, action: PayloadAction<string>) => {
-      if (state.selectedWords.includes(action.payload)){
-        
-      }
-    }
   },
   extraReducers: (builder) => {
     builder.addCase(fetchGameSets.fulfilled, (state, action: PayloadAction<string[]>) => {

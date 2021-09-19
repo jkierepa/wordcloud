@@ -1,15 +1,14 @@
 .input {
     flex: 1;
 
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: var(--foreground-color);
 
     border-radius: var(--global-border-radius);
     border: 3px solid var(--foreground-color);
 
-    /* box-shadow: 0 0 20px var(--foreground-color), inset 0 0 10px var(--foreground-color); */
-
     padding: 10px;
 
-    font-size: 2em;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    font-weight: bold;
 }

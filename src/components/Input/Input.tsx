@@ -1,15 +1,9 @@
 import React from 'react';
-
 import cln from 'classnames';
-import { CustomStyle } from '@appTypes/appTypes';
+
 import styles from './Input.module.css';
 
-type InputProps = {
-  value: string
-  setValue(value: string): void
-  placeholder?: string
-  customStyle?: CustomStyle
-}
+import { InputProps } from '@appTypes/propTypes';
 
 const Input = ({
   placeholder, customStyle, value, setValue,

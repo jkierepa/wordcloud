@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { useHistory } from 'react-router';
+
 import { useAppDispatch, useAppSelector } from '@store/store';
 import { setUser } from '@store/slices/user/userSlice';
-import { useHistory } from 'react-router';
+
 import LoginContainerLayout from '@layouts/LoginContainer/LoginContainerLayout';
 
 const LoginContainer = (): React.ReactElement => {
@@ -26,17 +28,6 @@ const LoginContainer = (): React.ReactElement => {
     setInputValue={(value) => setUsername(value)} 
     onPlayClick={() => handlePlayClick()}
     />)
-
-  // return (
-  //   <div style={{display: "flex", flexDirection: "column", justifyContent: "space-evenly", alignItems:"center", flex: 1}}>
-  //     <div style={{ display: 'flex', width: "50%", minWidth: "150px" }}>
-  //       <Input value={username} setValue={(value) => setUsername(value)} />
-  //     </div>
-  //     <div style={{ display: 'flex', width: "25%", minWidth: "150px" }}>
-  //       <Button onClick={() => handleClickPlay()}><h3>PLAY</h3></Button>
-  //     </div>
-  //   </div>
-  // );
 };
 
 export default LoginContainer;

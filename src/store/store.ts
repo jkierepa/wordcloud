@@ -7,19 +7,19 @@ import {
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 
-import highscoreReducer from './slices/highscore/highscoreSlice';
+import scoreReducer from './slices/score/scoreSlice';
 import userReducer from './slices/user/userSlice';
 import gameReducer from './slices/game/gameSlice';
 
 const reducers = combineReducers({
-  highscore: highscoreReducer,
+  score: scoreReducer,
   game: gameReducer,
   user: userReducer,
 });
 
 const persistConfig = {
   key: 'root',
-  whitelist: ['highscore', 'user'],
+  whitelist: ['user'],
   storage,
 };
 

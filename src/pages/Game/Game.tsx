@@ -1,11 +1,14 @@
-import GameContainer from '@containers/Game/GameContainer';
 import React from 'react';
 
-const Game = () => {
+import GameContainer from '@containers/Game/GameContainer';
+import LogoutButtonContainer from '@containers/LogoutButton/LogoutButtonContainer';
+
+const Game = (): React.ReactElement => {
     return (
-  <div>
-      <GameContainer />
-  </div>
+      <>  
+        <LogoutButtonContainer />
+        <GameContainer />
+      </>
 )};
 
 export default Game;

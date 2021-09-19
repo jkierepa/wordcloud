@@ -1,11 +1,7 @@
+import { Combination } from "@appTypes/appTypes"
+
 import shuffleArray from "./shuffleArray"
 
-type Combination = {
-    column: number,
-    row: number
-}
-
-//TODO: extract type
 const getCombinations = (columns: number, rows: number): Combination[] => {
     const combinations: Combination[] = []
     for (let i = 1; i <= columns; i++){
@@ -13,6 +9,7 @@ const getCombinations = (columns: number, rows: number): Combination[] => {
             combinations.push({column: i, row: j})
         }
     }
+    console.log(combinations)
     const shuffled = shuffleArray(combinations)
     return shuffled
 } 

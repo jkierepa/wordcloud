@@ -1,0 +1,20 @@
+.screenContainer { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    
+    flex: 1;
+    flex-direction: column
+}
+
+.authorText{
+    color: var(--foreground-color);
+    font-size: small;
+}
+
+.container{
+    display: flex;
+
+    width: 50%; 
+    height: 50%; 
+}

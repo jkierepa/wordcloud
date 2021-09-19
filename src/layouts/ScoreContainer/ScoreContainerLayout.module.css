@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    flex-direction: column;
+}
+
+.buttonWrapper {
+    display: flex; 
+
+    width: 20%; 
+    min-width: 100px;
+
+    margin-top: 50px
+}
+
+.text {
+    font-size: clamp(1rem, 10vh, 2rem);
+    color: var(--foreground-color);
+}
+
+.textPrimaryColor {
+    color: var(--primary-color)
+}
