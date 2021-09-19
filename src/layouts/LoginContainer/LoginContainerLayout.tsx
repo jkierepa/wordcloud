@@ -11,7 +11,7 @@ const LoginContainerLayout = ({inputValue, setInputValue, onPlayClick }: LoginCo
   return (
     <div className={styles.container}>
       <div className={styles.input}>
-        <Input value={inputValue} setValue={(value) => setInputValue(value)} />
+        <Input value={inputValue} setValue={(value) => setInputValue(value)} placeholder={'Enter your nickname'}/>
       </div>
       <div className={styles.button}>
         <Button onClick={() => onPlayClick()}><h3>PLAY</h3></Button>
