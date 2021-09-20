@@ -2,7 +2,7 @@ import React, { useContext, useMemo } from 'react'
 
 import Word from '@components/Word/Word'
 import { SelectedContext } from '@context/Selected/SelectedContext'
-import { CheckContext } from '@context/CheckContext/CheckContext'
+import { CheckContext } from '@context/Check/CheckContext'
 
 import getCombinations from '@utils/getCombinations'
 import styles from './WordGrid.module.css'

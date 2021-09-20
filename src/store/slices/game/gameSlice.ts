@@ -29,13 +29,7 @@ export const initialState: GameState = {
 export const gameSlice = createSlice({
   name: 'game',
   initialState,
-  reducers: {
-    removeGameSet: (state, action: PayloadAction<string>) => {
-      if (state.availableGameSets.includes(action.payload)){
-        state.availableGameSets = state.availableGameSets.filter((set) => set !== action.payload)
-      }
-    },
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder.addCase(fetchGameSets.fulfilled, (state, action: PayloadAction<string[]>) => {
       state.availableGameSets = action.payload
@@ -56,5 +50,5 @@ export const gameSlice = createSlice({
   }
 });
 
-export const { removeGameSet } = gameSlice.actions;
+// export const {} = gameSlice.actions;
 export default gameSlice.reducer;

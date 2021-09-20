@@ -2,7 +2,7 @@ import React from 'react';
 
 import Button from '@components/Button/Button';
 import WordGrid from '@components/WordGrid/WordGrid';
-import useCheckContext from '@context/CheckContext/CheckContext';
+import useCheckContext from '@context/Check/CheckContext';
 
 import styles from './GameContainerLayout.module.css'
 import { GameContainerLayoutProps } from '@appTypes/propTypes';

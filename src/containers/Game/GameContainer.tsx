@@ -8,7 +8,7 @@ import { setScore } from '@store/slices/score/scoreSlice'
 import GameContainerLayout from '@layouts/GameContainer/GameContainerLayout'
 
 import { SelectedContext } from '@context/Selected/SelectedContext'
-import { CheckContext } from '@context/CheckContext/CheckContext'
+import { CheckContext } from '@context/Check/CheckContext'
 
 import toggleSelection from '@utils/toggleSelection'
 import checkAnswers from '@utils/checkAnswers'

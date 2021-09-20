@@ -15,8 +15,10 @@ export const userSlice = createSlice({
   initialState,
   reducers: {
     setUser: (state, action: PayloadAction<string>) => {
-      state.name = action.payload;
-      state.id = new Date().getTime();
+      if (action.payload){
+        state.name = action.payload;
+        state.id = new Date().getTime();
+      }
     },
     clearUser: (state) => {
       state.id = initialState.id;
